@@ -1,4 +1,4 @@
-# PersonalStartpage
+# Minimal Startpage
  So here's my startpage! It's pretty simple but I like it that way!
  I was aiming for a more functional and non-flashy site, and I think it turned out just fine!
  
