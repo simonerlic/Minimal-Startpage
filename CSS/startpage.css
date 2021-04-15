@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'WorkSans-SemiBold';
+	src: url("../fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: 'SpaceMono-Bold';
+	src: url("../fonts/SpaceMono-Bold.ttf");
+}
+
+@font-face {
+	font-family: 'SpaceMono-Regular';
+	src: url("../fonts/SpaceMono-Regular.ttf");
+}
+	
+header {
+	color: #757575;
+	font-family: 'SpaceMono-Bold';
+	font-size: 50px;
+    -webkit-text-fill-color: #757575;
+	z-index:1;
+}
+
+p1 {
+    font-family: 'SpaceMono-Regular';
+    -webkit-text-fill-color: #757575;
+    font-size: 17px;
+	z-index:1;
+}
+
+p2 {
+    font-family: 'SpaceMono-Regular';
+    -webkit-text-fill-color: #757575;
+    font-size: 12px;
+	z-index:1;
+}
+
+form {
+    background-color: #363636;
+    width: 25%;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+input {
+    background-color: unset;
+    font: 16px 'SpaceMono-regular';
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+
+::placeholder {
+  color: #757575;
+  opacity: 0.7; 
+}
+
+svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    width: auto;
+    height: 10px;
+}
+
+input {
+    color: #B5B5B5;
+}
+
+.buttontext {
+    color: #757575;
+    font-family: 'SpaceMono-regular';
+}
+
+.button {
+	border: none;
+    background: none;
+  	color: #757575;
+  	padding: 10px;
+  	font-size: 12px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+.button:hover {
+	border: none;
+    background: none;
+  	color: #B5B5B5;
+  	padding: 10px;
+  	font-size: 12px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+.button[id = "twitch"]:hover{
+	border: none;
+    background: none;
+  	color: #b48ead;
+  	padding: 10px;
+  	font-size: 12px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+.button[id = "youtube"]:hover{
+	border: none;
+    background: none;
+  	color: #bf616a;
+  	padding: 10px;
+  	font-size: 12px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+.button[id = "twitter"]:hover{
+	border: none;
+    background: none;
+  	color: #81a1c1;
+  	padding: 10px;
+  	font-size: 12px;
+    align-content: center;
+    text-align: center;
+    font-family: 'SpaceMono-regular';
+}
+
+a {color: inherit; }
+
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  /*whatever width you want*/
+}
+
+#clock {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'WorkSans-SemiBold';
+    color: #757575;
+    padding: 20px;
+}
+
+#footer {
+  position: fixed ;
+  left: 0 ;
+  bottom: 0 ;
+  z-index:0;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Startpage</title>
+        <link href="CSS/startpage.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="JS/script.js"></script>
+    </head>
+	
+    <body onload="realTimeClock()" bgcolor="#2a2a2a">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner w3-animate-opacity">
+                    <div><p1 id="clock"></p1> <p1 id="ampm"></p1></div>
+                    <form id="form" role="search">
+                        <input type="search" id="query" name="q" placeholder="Search DuckDuckGo...">
+                    </form>  
+                    <script>
+                        const f = document.getElementById('form');
+                        const q = document.getElementById('query');
+                        const search = 'https://duckduckgo.com/?t=ffab&q=';
+
+                        function submitted(event) {
+                            event.preventDefault();
+                            const url = search + q.value + '&ia=web';
+                        window.open(url, '_self');
+                        }
+
+                        f.addEventListener('submit', submitted);
+                    </script>
+                    <p></p>	
+                    <!--<p2> twitter | youtube | twitch </p2> -->
+                    <button class="button" id="twitch"><a target="_blank" style="text-decoration: none" href="https://twitch.tv">twitch</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="youtube"><a target="_blank" style="text-decoration: none" href="https://youtube.com">youtube</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="twitter"><a target="_blank" style="text-decoration: none" href="https://twitter.com">twitter</a></button>
+                </div>
+                <div class="inner w3-animate-opacity">
+                    <button class="button" id="UVic"><a target="_blank" style="text-decoration: none" href="https://uvic.ca">UVic</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Brightspace"><a target="_blank" style="text-decoration: none" href="https://bright.uvic.ca">Brightspace</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="ConneX"><a target="_blank" style="text-decoration: none" href="https://connex.csc.uvic.ca">ConneX</a></button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
